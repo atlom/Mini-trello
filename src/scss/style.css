@@ -1,0 +1,15 @@
+
+.cntainer{
+    text-align: left;
+}
+
+ul.nav{
+    list-style-type: none;
+    text-align: left;
+}
+
+li.tablero{
+    display: inline;
+    list-style-type: none;
+    padding: 20px;
+}

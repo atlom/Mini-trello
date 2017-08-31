@@ -1,0 +1,22 @@
+<section>
+    <div class="container">
+             <ul class="nav">
+                <li class="tablero" ng-repeat="tablero in tableros">
+                    <a href="#">
+                        <div class="alert alert-primary">
+                            <h4 class="alert-heading">{{tablero.nombre}}</h4>
+                            <p class="mb-0">{{tablero.desc}}</p>
+                        </div> 
+                    </a>
+                </li>
+                 
+                 <li class="tablero">
+                    <a href="#!agregarTablero">
+                        <div class="alert alert-secondary">
+                            Nuevo Tablero...
+                        </div>
+                     </a>
+                 </li>
+            </ul>
+    </div>
+</section>

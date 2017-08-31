@@ -1,0 +1,28 @@
+{
+  "name": "mini-proyect-trello",
+  "version": "0.0.1",
+  "authors": [
+    "Juan Acuña <jaaf27@hotmail.com>"
+  ],
+  "description": "Mini Proyect Trello",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "jquery-ui": "*",
+    "fontawesome": "*",
+    "bootstrap-sass": "*",
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5",
+    "angular-marked": "^1.2.2"
+  },
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true
+}
