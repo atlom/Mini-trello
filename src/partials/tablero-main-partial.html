@@ -1,9 +1,9 @@
 <section>
     <div class="container">
-             <ul class="nav">
+             <ul><span>
                 <li class="tablero" ng-repeat="tablero in tableros">
                     <a href="#">
-                        <div class="alert alert-primary">
+                        <div class="well">
                             <h4 class="alert-heading">{{tablero.nombre}}</h4>
                             <p class="mb-0">{{tablero.desc}}</p>
                         </div> 
@@ -12,11 +12,12 @@
                  
                  <li class="tablero">
                     <a href="#!agregarTablero">
-                        <div class="alert alert-secondary">
+                        <div class="well">
                             Nuevo Tablero...
                         </div>
                      </a>
                  </li>
+                 </span>
             </ul>
     </div>
 </section>
