@@ -1,17 +1,18 @@
 app.controller("AgregarTableroCtrl",["$scope","$firebaseArray","FBURL",function($scope,$firebaseArray,FBURL){
     $scope.tsubmit=function (){
         var root = new Firebase(FBURL);
-        var ref = $firebaseArray(root.child("/tableros"));
+        var ref = root.child("/tableros");
         
         if (val_data()){
-            ref.$add({
+            var id =ref.push({
                 nombre : $scope.tnombre,
                 desc : $scope.tdesc
             });
-            alert("Tablero creado");
+            $(".alert").alert("sdsdsdds")
         }else{
             alert("Error");
         }
+        
     }
     
     function val_data(){

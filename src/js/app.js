@@ -6,7 +6,7 @@ app.config(function($routeProvider) {
         
     })
     .when("/tablero",{
-        templateUrl: "partials/tablero-partial.html",
+        templateUrl: "partials/tablero-main-partial.html",
         controller: "TableroCtrl"  
     })
     .when("/agregarTablero",{
