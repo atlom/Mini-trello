@@ -1,23 +1,20 @@
-<section>
-    <div class="container">
-             <ul><span>
-                <li class="tablero" ng-repeat="tablero in tableros">
-                    <a href="#">
-                        <div class="well">
+
+    <div>
+        <div class="row">
+             <ul class="board">
+                <li class="board-item" ng-repeat="tablero in tableros">
+                    <a href="#" class="well">
                             <h4 class="alert-heading">{{tablero.nombre}}</h4>
-                            <p class="mb-0">{{tablero.desc}}</p>
-                        </div> 
+                            <p class="mb-0">{{tablero.desc}}</p> 
                     </a>
                 </li>
                  
-                 <li class="tablero">
-                    <a href="#!agregarTablero">
-                        <div class="well">
+                 <li class="board-item">
+                    <a class="well" href="#!agregarTablero">
                             Nuevo Tablero...
-                        </div>
                      </a>
                  </li>
-                 </span>
             </ul>
-    </div>
-</section>
+            </div>
+   
+    </div> 
