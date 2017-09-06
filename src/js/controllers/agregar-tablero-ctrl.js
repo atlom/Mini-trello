@@ -2,7 +2,7 @@ app.controller("AgregarTableroCtrl",["$scope","$firebaseArray","FBURL",function(
     $scope.tsubmit=function (){
         var root = new Firebase(FBURL);
         var ref = root.child("/tableros");
-        
+
         if (val_data()){
             var new_ref =ref.push();
             var id = new_ref.key();
@@ -16,7 +16,7 @@ app.controller("AgregarTableroCtrl",["$scope","$firebaseArray","FBURL",function(
             alert("error");
         }
     }
-    
+
     function val_data(){
         if($scope.tnombre != null && $scope.tdesc != null){
             if($scope.tnombre.length <= 50 && $scope.tdesc.length <= 50){
@@ -25,5 +25,5 @@ app.controller("AgregarTableroCtrl",["$scope","$firebaseArray","FBURL",function(
                 return false;
             }
         }
-    } 
+    }
 }]);

@@ -1,7 +1,7 @@
 /**
- * Seed Project for the development of front-end javascript applications using bower and grunt. 
+ * Seed Project for the development of front-end javascript applications using bower and grunt.
  * The project is pre-configured with the following grunt modules:
- * 
+ *
  * 1) connect
  * 2) open
  * 3) sass
@@ -101,6 +101,11 @@ module.exports = function (grunt) {
                         src: '*.html',
                         dest: '<%=app.dist%>/',
                         expand: true
+                    },{
+                        cwd: '<%=app.src%>/partials',
+                        src: '*.html',
+                        dest: '<%=app.dist%>/partials',
+                        expand: true
                     }
                 ]
             }
@@ -140,7 +145,8 @@ module.exports = function (grunt) {
                 '<%=app.src%>/vendors/jquery-ui/jquery-ui.min.js',
                 '<%=app.src%>/vendors/bootstrap-sass/assets/javascripts/bootstrap.min.js',
                 //app scripts
-                '<%=app.dist%>/js/app.js'
+                '<%=app.dist%>/js/app.js',
+                '<%=app.dist%>/js/controllers/**/*.js'
                 ],
                 dest: '<%=app.dist%>/libs/app.min.js'
             }

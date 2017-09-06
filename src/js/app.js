@@ -3,7 +3,6 @@ app.config(function($routeProvider) {
     $routeProvider
     .when("/home",{
         templateUrl: "partials/home-partial.html"
-        
     })
     .when("/tablero",{
         templateUrl: "partials/tablero-main-partial.html",
